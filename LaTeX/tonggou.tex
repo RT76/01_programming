@@ -1,0 +1,70 @@
+\documentclass[UTF8,a4paper]{ctexart}
+\usepackage{amsmath}
+\pagestyle{plain}
+\linespread{1.5}
+\title{\bfseries{\zihao{1}\heiti{同构在导数中的应用}}}
+\author{\kaishu{宋和德}{ }整理}
+\date{\today}
+
+\begin{document}
+\maketitle
+\begin{abstract}
+    在导数的一些题目中，常常会遇到双变量的不等式证明或者
+    双变量不等式恒成立求参数范围问题。同构是一种通过变形
+    将两个变量分开并构造相同结构从而将问题简化为单变量函
+    数单调性问题的转化思想。本文整理了常用的一些同构技巧，
+    并在文末附有相应的习题加以巩固。
+\end{abstract}
+\section*{预备知识}
+
+\[
+    xe^x=e^{\ln x}e^x=e^{x+\ln x}\qquad\frac{x}{e^x}=e^{\ln x-x}\qquad\frac{e^x}{x}=e^{x-\ln x}
+\]
+\[
+    x+\ln x=\ln e^x+\ln x=\ln xe^x\qquad x-\ln x=\ln \frac{e^x}{x}
+\]
+\section{抽象函数}
+\qquad注意到变形时的变号问题，以下都默认$x_1>x_2$\\
+(1)
+\[\frac{f(x_1)-f(x_2)}{x_1-x_2} > k\]
+\[
+    \Rightarrow f(x_1)-f(x_2)>k(x_1-x_2)\Rightarrow
+    f(x_1)-kx_1>f(x_2)-x_2
+\]
+令$h(x)=f(x)-kx$，问题转化为研究$h(x)$单调性。\\
+(2)
+\[\frac{f(x_1)-f(x_2)}{x_1-x_2}>\frac{k}{x_1x_2}\]
+\[
+    \Rightarrow f(x_1)-f(x_2)>\frac{k(x_2-x_1)}{x_1x_2}
+    =\frac{k}{x_2}-\frac{k}{x_1}\Rightarrow
+    f(x_1)+\frac k x_1>f(x_2)+\frac k x_2
+\]
+令$h(x)=f(x)+\frac k x$，问题转化为研究$h(x)$单调性。\\
+\section{指对结构}
+指对跨阶想同构，同左同右取对数。\\
+(1)积型\begin{equation}
+    ae^a\leq b\ln b\Rightarrow \begin{cases}
+        \text{同左：} ae^a\leq (\ln b)e^{\ln b}
+        \Rightarrow f(x)=xe^x;    \\
+        \text{同右：} e^a\ln e^a\leq b\ln b\Rightarrow
+        f(x)=x\ln x;              \\
+        \text{取对：} a+\ln a\leq\ln b+\ln(\ln b)
+        \Rightarrow f(x)=x+\ln x. \\
+    \end{cases}
+\end{equation}
+需要指出的是，取对数是最快的方法，
+因为其构造的函数单调性一看便知。\\
+(2)商型\begin{equation}
+    \frac{e^a}{a}\leq\frac{b}{\ln b}\Rightarrow\begin{cases}
+        \text{同左：} \frac{e^a}{a}\leq\frac{e^{\ln b}}{\ln b}
+        \Rightarrow f(x)=\frac{e^x}{x};   \\
+        \text{同右：} \frac{e^a}{\ln e^a}\leq\frac{b}{\ln b}
+        \Rightarrow f(x)=\frac{x}{\ln x}; \\
+        \text{取对：}a-\ln a\leq \ln b-\ln(\ln b)\Rightarrow
+        f(x)=x-\ln x.
+    \end{cases}
+\end{equation}
+(3)和差型\begin{equation}
+    \Longrightarrow
+\end{equation}
+\end{document}
