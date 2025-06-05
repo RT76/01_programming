@@ -1,3 +1,4 @@
+# LaTeX
 *.aux 
 *.bbl 
 *.blg 
@@ -35,5 +36,6 @@
 *.fls 
 *.xdv 
 *.fdb_latexmk
+# other
 *.pdf 
 *.exe
