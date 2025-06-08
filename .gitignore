@@ -39,3 +39,7 @@
 # other
 *.pdf 
 *.exe
+*.mp4
+.vscode/
+_pycache_/
+videos/
